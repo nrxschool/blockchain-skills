@@ -1,0 +1,12 @@
+{
+  "name": "@nearx/skill-plugin",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "dependencies": {
+    "@nx/devkit": "^22.5.0",
+    "@nearx/core": "*"
+  },
+  "generators": "./generators.json"
+}

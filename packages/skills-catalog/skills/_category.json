@@ -1,0 +1,42 @@
+{
+  "(stellar-core)": {
+    "name": "Stellar Core",
+    "description": "Core Stellar Network concepts: accounts, assets, operations, fees, and protocol fundamentals"
+  },
+  "(soroban)": {
+    "name": "Soroban Smart Contracts",
+    "description": "Soroban smart contract development with Rust/WASM — contracts, storage, testing, and security patterns"
+  },
+  "(apis)": {
+    "name": "APIs & Data",
+    "description": "Stellar RPC, Horizon (legacy), and data access patterns for querying the Stellar network"
+  },
+  "(frontend)": {
+    "name": "Frontend & Wallets",
+    "description": "Frontend integration with Stellar — wallet connections, transaction signing, and browser SDK patterns"
+  },
+  "(payments)": {
+    "name": "Payments & Anchors",
+    "description": "Payment flows, x402 micropayments, SEP standards, and fiat on/off-ramp integration via anchors"
+  },
+  "(tools)": {
+    "name": "Developer Tools",
+    "description": "Stellar CLI, SDKs, Scaffold Stellar, and essential development tooling for the Stellar ecosystem"
+  },
+  "(defi)": {
+    "name": "DeFi",
+    "description": "Decentralized finance on Stellar — DEX, AMM, liquidity pools, and DeFi protocol patterns"
+  },
+  "(ai-agents)": {
+    "name": "AI & Agent Integration",
+    "description": "MCP servers, AI-assisted development tools, and agent integration patterns for Stellar"
+  },
+  "(security)": {
+    "name": "Security",
+    "description": "Smart contract security, audit checklists, OpenZeppelin on Stellar, and secure coding patterns"
+  },
+  "(community)": {
+    "name": "Community & Learning",
+    "description": "Contributing guides, learning resources, hackathon tips, and Nearx community materials"
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "version": "1.0.0",
+  "categories": {
+    "stellar-core": {
+      "name": "Stellar Core",
+      "description": "Core Stellar Network concepts: accounts, assets, operations, fees, and protocol fundamentals"
+    },
+    "soroban": {
+      "name": "Soroban Smart Contracts",
+      "description": "Soroban smart contract development with Rust/WASM — contracts, storage, testing, and security patterns"
+    },
+    "apis": {
+      "name": "APIs & Data",
+      "description": "Stellar RPC, Horizon (legacy), and data access patterns for querying the Stellar network"
+    },
+    "frontend": {
+      "name": "Frontend & Wallets",
+      "description": "Frontend integration with Stellar — wallet connections, transaction signing, and browser SDK patterns"
+    },
+    "payments": {
+      "name": "Payments & Anchors",
+      "description": "Payment flows, x402 micropayments, SEP standards, and fiat on/off-ramp integration via anchors"
+    },
+    "tools": {
+      "name": "Developer Tools",
+      "description": "Stellar CLI, SDKs, Scaffold Stellar, and essential development tooling for the Stellar ecosystem"
+    },
+    "defi": {
+      "name": "DeFi",
+      "description": "Decentralized finance on Stellar — DEX, AMM, liquidity pools, and DeFi protocol patterns"
+    },
+    "ai-agents": {
+      "name": "AI & Agent Integration",
+      "description": "MCP servers, AI-assisted development tools, and agent integration patterns for Stellar"
+    },
+    "security": {
+      "name": "Security",
+      "description": "Smart contract security, audit checklists, OpenZeppelin on Stellar, and secure coding patterns"
+    },
+    "community": {
+      "name": "Community & Learning",
+      "description": "Contributing guides, learning resources, hackathon tips, and Nearx community materials"
+    },
+    "uncategorized": {
+      "name": "Uncategorized",
+      "description": "Skills without a specific category"
+    }
+  },
+  "skills": [
+    {
+      "name": "dex-amm",
+      "description": "Stellar built-in DEX and AMM — order books, manage offers, path payments, liquidity pools. Use when trading on Stellar or building DEX integrations. Do NOT use for external DeFi protocols or Soroban-based DEXes.",
+      "category": "defi",
+      "path": "(defi)/dex-amm",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "8299221bb5298e2b45b8f761f81a4fafba9f86019e7b13b950fcd95e931ef17a"
+    },
+    {
+      "name": "frontend-integration",
+      "description": "Frontend integration with Stellar — wallet connections, transaction signing, React patterns, and browser SDK usage. Use when building web apps on Stellar. Do NOT use for backend services or CLI tools.",
+      "category": "frontend",
+      "path": "(frontend)/frontend-integration",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "4dcb46aa7832da0bd561e8ed33bbe2dbe06e09f6a96a8c98587da7ac6886870e"
+    },
+    {
+      "name": "horizon-legacy",
+      "description": "Horizon REST API for classic Stellar operations — accounts, transactions, effects, streaming. Use when maintaining legacy integrations. Do NOT use for new projects — prefer Stellar RPC.",
+      "category": "apis",
+      "path": "(apis)/horizon-legacy",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "21667f8df117eddad4b3e1d2aec9ecf071d2d7c79b1670d8bb14a168f7fa27db"
+    },
+    {
+      "name": "mcp-servers",
+      "description": "MCP servers for Stellar — Model Context Protocol integrations, XDR decoder, AI-assisted development. Use when setting up AI agent tooling for Stellar. Do NOT use for general MCP development or non-Stellar MCP servers.",
+      "category": "ai-agents",
+      "path": "(ai-agents)/mcp-servers",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "6d9d6b789dc59e1470e0b03e4b7cb035ab831eb5275084b88eb2ff008b25dc36"
+    },
+    {
+      "name": "nearx-contributing-guide",
+      "description": "Guide for Nearx community members to contribute skills to this repository. Use when adding a new skill or understanding the contribution process. Do NOT use for using existing skills.",
+      "category": "community",
+      "path": "(community)/nearx-contributing-guide",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "5d7b691a8f3337b31bd901ebd7986a3e2f812aa2417d99957754c6bb14b52536"
+    },
+    {
+      "name": "seps-anchors",
+      "description": "Stellar SEP standards and anchor ecosystem — SEP-6, SEP-10, SEP-24, SEP-31, stellar.toml, fiat on/off-ramps. Use when integrating with anchors or implementing SEP flows. Do NOT use for general Stellar operations or smart contracts.",
+      "category": "payments",
+      "path": "(payments)/seps-anchors",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "18050a4f1cd4f536fe406c930e5b161b7b8fe895e94a510d43301f2d32de0ac2"
+    },
+    {
+      "name": "smart-contract-security",
+      "description": "Smart contract security on Stellar — OpenZeppelin contracts, audit patterns, common vulnerabilities. Use when securing Soroban contracts or preparing for audits. Do NOT use for general web security.",
+      "category": "security",
+      "path": "(security)/smart-contract-security",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "61b21aa06cee4cac63b6d4e2dbb97fce365cc8579743ce2d01d7ba9974ad08dd"
+    },
+    {
+      "name": "soroban-contracts",
+      "description": "Soroban smart contract development — Rust/WASM contracts, storage, auth, cross-contract calls, deployment. Use when writing, deploying, or invoking Soroban contracts. Do NOT use for classic Stellar operations or frontend integration.",
+      "category": "soroban",
+      "path": "(soroban)/soroban-contracts",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "0a47edec09520f1ea07f76a7b6bda4b07d4d5993630ab068ea6b94bf4c00b154"
+    },
+    {
+      "name": "soroban-security",
+      "description": "Soroban smart contract security patterns — access control, reentrancy, integer safety, auth best practices. Use when auditing or securing Soroban contracts. Do NOT use for general web security or classic Stellar security.",
+      "category": "soroban",
+      "path": "(soroban)/soroban-security",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "e935e217440a043d43f1e4618713b75d98b8d4eedd82f900de4fdeda7d3bcc85"
+    },
+    {
+      "name": "soroban-testing",
+      "description": "Testing Soroban smart contracts — unit tests, integration tests, testnet deployment, Stellar CLI testing. Use when writing tests or debugging contracts. Do NOT use for frontend testing or general test frameworks.",
+      "category": "soroban",
+      "path": "(soroban)/soroban-testing",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "72832252a10c7c6b4984f69da844f7bd22c9f1e5b71be059ada76dda4be1a03b"
+    },
+    {
+      "name": "stellar-accounts",
+      "description": "Stellar account model — keypairs, funding, signers, sponsorship, and minimum balances. Use when creating accounts, managing signers, or understanding the Stellar account model. Do NOT use for Soroban contract accounts or smart wallet patterns.",
+      "category": "stellar-core",
+      "path": "(stellar-core)/accounts",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "25d6a408f58be7aed77746553db0ebed8dcac4f5bb2cecaf2926e91e9eec8de6"
+    },
+    {
+      "name": "stellar-assets",
+      "description": "Stellar asset issuance, trustlines, custom tokens, and Stellar Asset Contract (SAC). Use when issuing tokens, managing trustlines, or bridging classic assets to Soroban. Do NOT use for Soroban-native tokens or general smart contract development.",
+      "category": "stellar-core",
+      "path": "(stellar-core)/assets",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "7b771bed347c0372fc8a976f8a7abd617c4f54b37a8ee1ed724673bf08697909"
+    },
+    {
+      "name": "stellar-cli",
+      "description": "Stellar CLI — contract management, key management, network configuration, and development workflows. Use when working with the Stellar CLI tool. Do NOT use for JavaScript SDK or frontend development.",
+      "category": "tools",
+      "path": "(tools)/stellar-cli",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "d44ae069f554b1e04bd8b035160a0ab11150a2b98757bba164597520b30a94e1"
+    },
+    {
+      "name": "stellar-fees",
+      "description": "Stellar fee model — base fees, resource fees, surge pricing, and fee strategies. Use when optimizing transaction costs or understanding fee mechanics. Do NOT use for Soroban-specific resource metering.",
+      "category": "stellar-core",
+      "path": "(stellar-core)/fees",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "126285e7d461fd95a44f5517b06645562eb215ad69dbfcaeed6dc2550759dad6"
+    },
+    {
+      "name": "stellar-operations",
+      "description": "All Stellar transaction operations — Payment, CreateAccount, ManageOffers, PathPayment, and more. Use when building or submitting transactions. Do NOT use for Soroban contract invocations.",
+      "category": "stellar-core",
+      "path": "(stellar-core)/operations",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "45bb8ca8db374ca8008a6770060524797e09b65b5f1b5ac93ebdd5695369030b"
+    },
+    {
+      "name": "stellar-rpc",
+      "description": "Stellar RPC JSON-RPC API — simulateTransaction, sendTransaction, getTransaction, getEvents, getLedgerEntries. Use when interacting with the Stellar network programmatically. Do NOT use for Horizon REST API.",
+      "category": "apis",
+      "path": "(apis)/stellar-rpc",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "7a041cadc9af198be0c8917dddf762b6531753b175dbb9e8f7d59277fb59df4a"
+    },
+    {
+      "name": "stellar-sdks",
+      "description": "Stellar SDKs — JavaScript, Python, Go, Rust client libraries for interacting with the Stellar network. Use when choosing or using an SDK. Do NOT use for contract development (see soroban-contracts).",
+      "category": "tools",
+      "path": "(tools)/stellar-sdks",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "c1a88eecf4a8397ff315008c3fe97fa7053b72ec768adfafc11b56ae1e8d5ffe"
+    },
+    {
+      "name": "x402-stellar",
+      "description": "x402 HTTP micropayments on Stellar — pay-per-request APIs using HTTP 402, Soroban token transfers, facilitator pattern. Use when building pay-per-use APIs or machine payments. Do NOT use for general payment flows or EVM x402.",
+      "category": "payments",
+      "path": "(payments)/x402-stellar",
+      "files": [
+        "SKILL.md"
+      ],
+      "author": "nearx",
+      "version": "1.0.0",
+      "contentHash": "ca3e270bd3c99b7d523498dc93b962f5e237db29f4ec1788bed96d339aea21a5"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@nearx/skills-catalog",
+  "version": "0.13.0",
+  "description": "Stellar Network skills catalog for Nearx AI agent skills",
+  "author": "Nearx",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nearxdev/skills.git",
+    "directory": "packages/skills-catalog"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "skills-registry.json",
+    "skills/"
+  ],
+  "devDependencies": {
+    "chalk": "^5.6.2"
+  }
+}

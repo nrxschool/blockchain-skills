@@ -1,0 +1,59 @@
+{
+  "name": "@nearx/skills-cli",
+  "version": "1.4.4",
+  "description": "CLI to install and manage Stellar Network AI agent skills",
+  "author": "Nearx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nearxdev/skills.git"
+  },
+  "type": "module",
+  "bin": {
+    "agent-skills": "./index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "nx build",
+    "dev": "tsx src/index.ts",
+    "postbuild": "chmod +x dist/index.js",
+    "test": "cross-env NODE_OPTIONS='--experimental-vm-modules' jest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "skills",
+    "cli"
+  ],
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "ink": "^6.8.0",
+    "ink-big-text": "^2.0.0",
+    "ink-gradient": "^4.0.0",
+    "ink-spinner": "^5.0.0",
+    "ink-text-input": "^6.0.0",
+    "jotai": "^2.18.0",
+    "ky": "^1.14.3",
+    "package-json": "^10.0.1",
+    "react": "^19.2.4"
+  },
+  "devDependencies": {
+    "@jest/globals": "30.2.0",
+    "@nearx/core": "0.0.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^24",
+    "@types/react": "^19.2.14",
+    "fast-check": "^4.5.3",
+    "jest-environment-jsdom": "^30.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
