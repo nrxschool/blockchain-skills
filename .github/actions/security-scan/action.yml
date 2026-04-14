@@ -2,6 +2,10 @@ name: 'Security Scan'
 description: 'Run incremental security scan on skills catalog'
 
 inputs:
+  snyk-token:
+    description: 'Snyk API token for security scanning'
+    required: false
+    default: ''
   artifact-name:
     description: 'Name for the uploaded scan results artifact'
     required: true
@@ -40,7 +44,7 @@ runs:
       id: scan
       shell: bash
       env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        SNYK_TOKEN: ${{ inputs.snyk-token }}
       run: npx nx run @tech-leads-club/skills-catalog:security-scan || NX_NO_CLOUD=true npx nx run @tech-leads-club/skills-catalog:security-scan
       continue-on-error: true
 
