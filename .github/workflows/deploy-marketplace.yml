@@ -1,52 +1,37 @@
 name: Deploy Marketplace (GitHub Pages)
 
 on:
-  workflow_run:
-    workflows: ['CI/CD Pipeline']
-    types: [completed]
+  push:
     branches: [main]
   workflow_dispatch: {}
 
 permissions:
-  actions: read
   contents: read
   pages: write
   id-token: write
-  pull-requests: write
 
 jobs:
-  build:
-    name: Build Marketplace
+  deploy:
+    name: Build & Deploy
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    if: >
-      github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
     concurrency:
-      group: ci-${{ github.event.pull_request.number }}
+      group: deploy-pages
       cancel-in-progress: true
-    env:
-      NX_CLOUD_ACCESS_TOKEN: ${{ github.event.pull_request.head.repo.full_name == github.repository && secrets.NX_CLOUD_ACCESS_TOKEN || '' }}
-      NX_NO_CLOUD: ${{ github.event.pull_request.head.repo.full_name != github.repository }}
-      NODE_OPTIONS: '--experimental-vm-modules'
     steps:
-      - name: Checkout Code
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: main
           fetch-depth: 0
-
-      - name: Set Nx SHAs
-        uses: nrwl/nx-set-shas@v4
 
       - name: Setup Environment
         uses: ./.github/actions/setup
 
       - name: Generate skills data
-        run: npm run generate:data || NX_NO_CLOUD=true npm run generate:data
+        run: npm run generate:data
 
       - name: Build (static export)
-        run: npx nx run marketplace:export || NX_NO_CLOUD=true npx nx run marketplace:export
+        run: npx nx run marketplace:export
         env:
           NODE_ENV: production
 
@@ -59,5 +44,4 @@ jobs:
           path: packages/marketplace/out
 
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
